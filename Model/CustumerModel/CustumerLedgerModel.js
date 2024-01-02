@@ -66,7 +66,7 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        balace: {
+        balance: {
             type: String,
             required: true,
         },
@@ -74,4 +74,4 @@ const EmpolyeeSchema = mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("custumerledgers", EmpolyeeSchema);
+module.exports  = mongoose.model("custumerledgers", EmpolyeeSchema);

@@ -3,7 +3,7 @@ const db = require('../../Model/CustumerModel/CustumerLedgerModel');
 const addemployee = async (req, res) => {
     try {
         const newdata = await db.create(req.body);
-        res.status(200).json({newdata, message:"custumer payment successfully"});
+        res.status(200).json({newdata, message:"custumer ledger add  successfully"});
     } catch (error) {
         console.error(error); 
         res.status(500).json({ error: "Internal Server Error" }); 
@@ -32,7 +32,7 @@ const getsingledata = async(req, res)=>{
 const deletedata = async(req, res)=>{
     try {
         const deletedatas = await db.deleteOne({_id: req.params.id})
-        res.status(200).json({deletedatas, message:"custumer payment deleted"}) 
+        res.status(200).json({deletedatas, message:"custumer ledger deleted"}) 
     } catch (error) {
         console.log(error);
     }
@@ -41,7 +41,7 @@ const deletedata = async(req, res)=>{
 const updatedata = async (req, res) => {
     try {
         const upadate = await db.findByIdAndUpdate({_id: req.params.id})
-        res.status(200).json({upadate, message:"custumer payment updated"}) 
+        res.status(200).json({upadate, message:"custumer ledger updated"}) 
     } catch (error) {
         console.log(error);
     }
