@@ -7,7 +7,7 @@ const {
     getsingledata,
     deletedata,
     updatedata
-}= require('../../Controller/ProductController/ProductController')
+} = require('../../Controller/ProductController/ProductController')
 
 
 

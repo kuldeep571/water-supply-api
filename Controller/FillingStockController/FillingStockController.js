@@ -19,7 +19,7 @@ const fillingstock = async (req, res) => {
         res.status(200).json(newdata);
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: "Internal Server Error" }); 
+        res.status(500).json({ error: "Internal Server Error" });
     }
 };
 
@@ -57,20 +57,19 @@ const updatedata = async (req, res) => {
     try {
         const {
             productName,
-            price,
-            quantityType
+            fillingStockQuantity,
+            date
         } = req.body;
 
         const updatedata = await db.findByIdAndUpdate(
             req.params.id,
             {
                 productName,
-                price,
-                quantityType,
+                fillingStockQuantity,
+                date
             },
             { new: true }
         );
-
         res.status(200).json(updatedata);
     } catch (error) {
         res.status(500).json({ error: "Internal Server Error" });
