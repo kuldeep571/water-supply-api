@@ -9,7 +9,7 @@ const {
     updatedata,
    
 
-}= require('../../Controller/StockInOutController/StockInOutController')
+}= require('../../Controller/ProductController/StockInOutController')
 
 
 app.post("/", stockinout);

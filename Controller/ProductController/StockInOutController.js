@@ -1,4 +1,4 @@
-const db = require('../../Model/StockInOutModel/StockInOutModel');
+const db = require('../../Model/ProductModel/StockInOutModel');
 
 const stockinout = async (req, res) => {
     try {

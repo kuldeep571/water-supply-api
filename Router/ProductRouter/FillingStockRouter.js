@@ -5,7 +5,7 @@ const {
     fillingstock,
     getdata,getsingle,deletedata,updatedata
     
-} = require('../../Controller/FillingStockController/FillingStockController')
+} = require('../../Controller/ProductController/FillingStockController')
 
 
 app.post("/", fillingstock);
