@@ -3,10 +3,12 @@ const dbConnect = require('./Config/db')
 const bodyparser = require('body-parser');
 
 const app = express();
+const cors = require("cors");
 
 
 dbConnect();
 app.use(express.static(__dirname));
+app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 
