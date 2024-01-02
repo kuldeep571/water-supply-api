@@ -31,7 +31,11 @@ const EmpolyeeSchema = mongoose.Schema(
             required: true,
         },
         openingbottle: {
+<<<<<<< Updated upstream
             type: String,
+=======
+            type: Boolean,
+>>>>>>> Stashed changes
             default: false,
         },
         openingbalance: {
@@ -50,6 +54,13 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
+<<<<<<< Updated upstream
+=======
+        selectarea: {
+            type: String,
+            required: true,
+        }, 
+>>>>>>> Stashed changes
         requiredbottleqty: {
             type: String,
             required: true,
@@ -63,6 +74,7 @@ const EmpolyeeSchema = mongoose.Schema(
 );
 
 module.exports = mongoose.model("newcustumers", EmpolyeeSchema);
+<<<<<<< Updated upstream
 
 
 // {
@@ -81,3 +93,5 @@ module.exports = mongoose.model("newcustumers", EmpolyeeSchema);
 //     "requiredbottleqty":"dnc",
 //     "day":"dcdhb"
 // }
+=======
+>>>>>>> Stashed changes

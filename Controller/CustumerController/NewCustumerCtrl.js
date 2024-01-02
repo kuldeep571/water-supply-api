@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 const db = require('../../Model/CustumerModel/NewCustumerModel');
 
 const addemployee = async (req, res) => {
@@ -41,11 +44,19 @@ const deletedata = async(req, res)=>{
 
 const updatedata = async (req, res) => {
     try {
+<<<<<<< Updated upstream
         const upadate = await db.findByIdAndUpdate({_id: req.params.id})
+=======
+        const upadate = await db.deleteOne({_id: req.params.id})
+>>>>>>> Stashed changes
         res.status(200).json({upadate, message:"update cutumer data"}) 
     } catch (error) {
         console.log(error);
     }
 };
 
+<<<<<<< Updated upstream
 module.exports = { addemployee, getdata , getsingledata, deletedata, updatedata};
+=======
+module.exports = { addemployee, getdata , getsingledata, deletedata, updatedata};
+>>>>>>> Stashed changes
