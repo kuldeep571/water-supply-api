@@ -23,9 +23,7 @@ app.use("/api/stockinout", require('./Router/StockInOutRouter/StockInOutRouter')
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
 app.use("/api/vendor", require('./Router/VendorRouter/VendorRouter'));
 app.use("/api/newcustumer", require('./Router/CustumerRoute/NewCustumerRoute'));
-app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
-app.use("/api/custumerpayment", require('./Router/CustumerRoute/CustumerPaymentRoute'));
-app.use("/api/custumerledger", require('./Router/CustumerRoute/CustumerLedgerRoute'));
+app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
 
 
 
