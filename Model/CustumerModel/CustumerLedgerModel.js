@@ -2,59 +2,71 @@ const mongoose = require("mongoose");
 
 const EmpolyeeSchema = mongoose.Schema(
     {
-        accountopendate: {
+        custumerid: {
             type: String,
             required: true,
         },
-        custumername: {
+        custumer: {
             type: String,
             required: true,
         },
-        contactnumber   : {
+        ledgertype   : {
             type: String,
             required: true,
         },
-        address: {
+        name: {
             type: String,
             required: true,
         },
-        amountstatus: {
+        adress: {
             type: String,
             required: true,
         },
-        securitydepositamount: {
+        contact: {
             type: String,
             required: true,
         },
-        securityremark: {
+        securitybalance: {
             type: String,
             required: true,
         },
-        openingbottle: {
+        outstandingbotal: {
             type: String,
             default: false,
         },
-        openingbalance: {
+        outstandingbalance: {
             type: String,
             required: true,
         },
-        username: {
+        totalsalewaterbottal: {
             type: String,
             required: true,
         },
-        searchbycustumerid: {
+        totalreturnwaterbottal: {
             type: String,
             required: true,
         },
-        selectarea: {
+        bottalbalance: {
             type: String,
             required: true,
         },
-        requiredbottleqty: {
+        billingamount: {
             type: String,
             required: true,
-        }, 
-        day: {
+        },
+        totalamount: {
+            type: String,
+            required: true,
+        },
+        paymentrecieved: {
+            type: String,
+            required: true,
+        },
+        tax: {
+            type: String,
+            required: true,
+        },
+        balace: {
             type: String,
             required: true,
         },
@@ -62,22 +74,4 @@ const EmpolyeeSchema = mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("newcustumers", EmpolyeeSchema);
-
-
-// {
-//     "accountopendate":"2",
-//     "custumername":"khans ",
-//     "contactnumber":"cdh",
-//     "address":"xjs",
-//     "amountstatus":"xcjx",
-//     "securitydepositamount":"sdvs",
-//     "securityremark":"cj",
-//     "openingbottle":"chv",
-//     "openingbalance":"cdbc",
-//     "username":"chvdhcv",
-//     "searchbycustumerid":"djcbd",
-//     "selectarea":"dncd",
-//     "requiredbottleqty":"dnc",
-//     "day":"dcdhb"
-// }
+module.exports = mongoose.model("custumerledgers", EmpolyeeSchema);
