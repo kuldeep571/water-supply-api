@@ -1,4 +1,3 @@
-
 const db = require('../../Model/CustumerModel/NewCustumerModel');
 
 const addemployee = async (req, res) => {

@@ -2,12 +2,12 @@ const express = require('express');
 const app = express.Router();
 
 const {
-    addemployee, 
-    getdata, 
+    addemployee,
+    getdata,
     getsingledata,
-    deletedata, 
+    deletedata,
     updatedata
-}= require('../../Controller/CustumerController/CustumerLedgerCtrl')
+} = require('../../Controller/CustumerController/CustumerLedgerCtrl')
 
 app.post("/", addemployee);
 

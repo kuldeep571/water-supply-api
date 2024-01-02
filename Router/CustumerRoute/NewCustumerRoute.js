@@ -20,3 +20,12 @@ app.delete("/:id", deletedata);
 app.put("/:id", updatedata);
 
 module.exports = app;
+
+
+
+
+
+
+
+
+module.exports = app;
