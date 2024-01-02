@@ -12,7 +12,7 @@ const addproduct = async (req, res) => {
             price,
             quantityType
         });
-        res.status(200).json({newdata, success: true, message:"addproduct product successfully"});
+        res.status(200).json({ newdata, success: true, message: "addproduct product successfully" });
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
     }
@@ -22,7 +22,7 @@ const addproduct = async (req, res) => {
 const getdata = async (req, res) => {
     try {
         const finddata = await db.find()
-        res.status(200).json(finddata)
+        res.status(200).json({ sucess: true, finddata, message: "All Products fetched Successfully" })
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
     }
@@ -39,7 +39,7 @@ const getsingledata = async (req, res) => {
 
 const deletedata = async (req, res) => {
     try {
-        const deletedatas= await db.deleteOne({ _id: req.params.id })
+        const deletedatas = await db.deleteOne({ _id: req.params.id })
         res.status(200).json({ deletedatas, message: "Delete vendor data" })
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
