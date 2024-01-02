@@ -22,12 +22,10 @@ app.use("/api/fillingstock", require('./Router/FillingStockRouter/FillingStockRo
 app.use("/api/stockinout", require('./Router/StockInOutRouter/StockInOutRouter'));
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
 app.use("/api/vendor", require('./Router/VendorRouter/VendorRouter'));
-<<<<<<< Updated upstream
-app.use("/api/newcustumer", require('./Router/CustumerRoute/NewCustumerRoute'));
-app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
-=======
-app.use("/api/  ", require('./Router/CustumerRoute/NewCustumerRoute'));
->>>>>>> Stashed changes
+app.use("/api/newcustumer ", require('./Router/CustumerRoute/NewCustumerRoute'));
+app.use("/api/custumerledger ", require('./Router/CustumerRoute/CustumerLedgerRoute'));
+app.use("/api/custumerpayment ", require('./Router/CustumerRoute/CustumerPaymentRoute'));
+app.use("/api/neworder ", require('./Router/CustumerRoute/NewOrderRoute'));
 
 
 

@@ -75,3 +75,24 @@ const EmpolyeeSchema = mongoose.Schema(
 );
 
 module.exports  = mongoose.model("custumerledgers", EmpolyeeSchema);
+
+
+// {
+//     "custumerid":"00001",
+//     "custumer":"cvdh",
+//     "ledgertype":"jcvd",
+//     "name":"jcvvd",
+//     "adress":"jcdh",
+//     "contact":"dkchdv",
+//     "securitybalance":"jhcd",
+//     "outstandingbotal":"jchdv",
+//     "outstandingbalance":"dkjc",
+//     "totalsalewaterbottal":"jdvchdv",
+//     "totalreturnwaterbottal":"cd ",
+//     "bottalbalance":"kdcbdh",
+//     "billingamount":"dkcvv",
+//     "totalamount":"lkcb",
+//     "paymentrecieved":"sxjsgv",
+//     "tax":"cdjv",
+//     "balance":"djcv"
+//     }

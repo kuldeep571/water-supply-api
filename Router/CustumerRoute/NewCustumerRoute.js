@@ -19,8 +19,6 @@ app.delete("/:id", deletedata);
 
 app.put("/:id", updatedata);
 
-<<<<<<< Updated upstream
-=======
 module.exports = app;
 
 
@@ -30,5 +28,4 @@ module.exports = app;
 
 
 
->>>>>>> Stashed changes
 module.exports = app;
