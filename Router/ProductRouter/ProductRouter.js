@@ -7,7 +7,7 @@ const {
     getsingledata,
     deletedata,
     updatedata
-}= require('../../Controller/ProductController/ProductController')
+} = require('../../Controller/ProductController/ProductController')
 
 
 
@@ -20,15 +20,6 @@ app.get("/:id", getsingledata);
 app.delete("/:id", deletedata);
 
 app.put("/:id", updatedata);
-
-
-module.exports = app;
-
-
-
-
-
-
 
 
 module.exports = app;
