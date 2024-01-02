@@ -19,6 +19,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 app.use("/api/product", require('./Router/ProductRouter/ProductRouter'));
 app.use("/api/fillingstock", require('./Router/FillingStockRouter/FillingStockRouter'));
+app.use("/api/stockinout", require('./Router/StockInOutRouter/StockInOutRouter'));
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
 app.use("/api/vendor", require('./Router/VendorRouter/VendorRouter'));
 app.use("/api/newcustumer", require('./Router/CustumerRoute/NewCustumerRoute'));
