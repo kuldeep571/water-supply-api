@@ -1,13 +1,18 @@
 const express = require('express');
 const dbConnect = require('./Config/db')
 const bodyparser = require('body-parser');
-
 const app = express();
+const dotenv = require("dotenv").config();
+
+const PORT = process.env.PORT;
+
 const cors = require("cors");
+const morgan = require("morgan");
 
 
 dbConnect();
 app.use(express.static(__dirname));
+app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -28,7 +33,6 @@ app.get('/', function(req, res){
 
 
 
-const port = 8000;
-app.listen(port, function() {
-    console.log("Server is running on port", port);
+app.listen(PORT, function() {
+    console.log("Server is running on port", PORT);
 });
