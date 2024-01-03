@@ -28,6 +28,7 @@ app.use("/api/custumerpayment", require('./Router/CustumerRoute/CustumerPaymentR
 app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
 app.use("/api/custumersecurity2", require('./Router/CustumerRoute/CustumerSecuirityRoute2'));
+app.use("/api/productprice", require('./Router/CustumerRoute/ProductPriceRoute'));
 app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
 app.use("/api/VendorPurchaseOrder", require('./Router/VendorPurchaseOrderRouter/VendorPurchaseOrderRouter'));
 
