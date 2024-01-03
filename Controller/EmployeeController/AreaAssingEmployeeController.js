@@ -1,4 +1,5 @@
 const db = require('../../Model/EmployeeModel/AreaAssingEmployeeModel');
+const employee = require('../../Model/EmployeeModel/EmployeeModel')
 
 const addarea = async (req, res) => {
     try {
@@ -13,7 +14,7 @@ const addarea = async (req, res) => {
 
 const getdata = async (req, res) => {
     try {
-        const finddata = await db.find()
+        const finddata = await employee.find().select('firstName')
         res.status(200).json(finddata)
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
