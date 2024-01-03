@@ -1,4 +1,4 @@
-const db = require('../../Model/AreaAssingModel/AreaAssingModel');
+const db = require('../../Model/EmployeeModel/AreaAssingEmployeeModel');
 
 const addarea = async (req, res) => {
     try {

@@ -8,7 +8,7 @@ const {
     deletedata,
     updatedata
   
-}= require('../../Controller/AreaAssingController/AreaAssingController')
+}= require('../../Controller/EmployeeController/AreaAssingEmployeeController')
 
 
 

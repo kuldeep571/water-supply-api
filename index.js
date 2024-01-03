@@ -21,6 +21,7 @@ app.use("/api/product", require('./Router/ProductRouter/ProductRouter'));
 app.use("/api/fillingstock", require('./Router/ProductRouter/FillingStockRouter'));
 app.use("/api/stockinout", require('./Router/ProductRouter/StockInOutRouter'));
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
+app.use("/api/AreaAssing", require('./Router/EmployeeRouter/AreaAssingEmployeeRouter'));
 app.use("/api/vendor", require('./Router/VendorRouter/VendorRouter'));
 app.use("/api/VendorPurchaseOrder", require('./Router/VendorRouter/VendorPurchaseOrderRouter'));
 app.use("/api/VendorPayment", require('./Router/VendorRouter/VendorPaymentRouter'));
@@ -31,7 +32,7 @@ app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
 app.use("/api/custumersecurity2", require('./Router/CustumerRoute/CustumerSecuirityRoute2'));
 app.use("/api/productprice", require('./Router/CustumerRoute/ProductPriceRoute'));
-app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
+
 
 
 app.get('/', function(req, res){
