@@ -2,16 +2,16 @@ const express = require('express');
 const app = express.Router();
 
 const {
-    addvendor, 
+    addvendorpayment, 
     getdata, 
     getsingledata,
     deletedata, 
     updatedata
-}= require('../../Controller/VendorController/VendorController')
+}= require('../../Controller/VendorController/VenderPaymentController')
 
 
 
-app.post("/", addvendor);
+app.post("/", addvendorpayment);
 
 app.get("/", getdata);
 
@@ -22,3 +22,5 @@ app.delete("/:id", deletedata);
 app.put("/:id", updatedata);
 
 module.exports = app;
+
+
