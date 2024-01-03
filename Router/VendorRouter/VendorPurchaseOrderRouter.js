@@ -3,7 +3,7 @@ const app = express.Router();
 
 const {
     createpurchaseorder
-}= require('../../Controller/VendorPurchaseOrderController/VendorPurchaseOrderController')
+}= require('../../Controller/VendorController/VendorPurchaseOrderController')
 
 
 

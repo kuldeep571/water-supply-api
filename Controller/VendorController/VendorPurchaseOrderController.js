@@ -1,4 +1,4 @@
-const db = require('../../Model/VendorPurchaseOrderModel/VendorPurchaseOrderModel');
+const db = require('../../Model/VendorModel/VendorPurchaseOrderModel');
 
 const createpurchaseorder = async (req, res) => {
     try {

@@ -22,13 +22,13 @@ app.use("/api/fillingstock", require('./Router/ProductRouter/FillingStockRouter'
 app.use("/api/stockinout", require('./Router/ProductRouter/StockInOutRouter'));
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
 app.use("/api/vendor", require('./Router/VendorRouter/VendorRouter'));
+app.use("/api/VendorPurchaseOrder", require('./Router/VendorRouter/VendorPurchaseOrderRouter'));
 app.use("/api/newcustumer", require('./Router/CustumerRoute/NewCustumerRoute'));
 app.use("/api/custumerledger", require('./Router/CustumerRoute/CustumerLedgerRoute'));
 app.use("/api/custumerpayment", require('./Router/CustumerRoute/CustumerPaymentRoute'));
 app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
 app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
-app.use("/api/VendorPurchaseOrder", require('./Router/VendorPurchaseOrderRouter/VendorPurchaseOrderRouter'));
 
 
 
