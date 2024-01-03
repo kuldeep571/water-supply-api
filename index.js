@@ -11,7 +11,6 @@ const morgan = require("morgan");
 
 
 dbConnect();
-app.use(express.static(__dirname));
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyparser.json());
@@ -34,11 +33,6 @@ app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuiri
 app.use("/api/custumersecurity2", require('./Router/CustumerRoute/CustumerSecuirityRoute2'));
 app.use("/api/productprice", require('./Router/CustumerRoute/ProductPriceRoute'));
 
-
-
-app.get('/', function(req, res){
-    res.sendFile('index.html')
-})
 
 
 
