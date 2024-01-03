@@ -28,6 +28,7 @@ app.use("/api/custumerledger", require('./Router/CustumerRoute/CustumerLedgerRou
 app.use("/api/custumerpayment", require('./Router/CustumerRoute/CustumerPaymentRoute'));
 app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
+app.use("/api/custumersecurity2", require('./Router/CustumerRoute/CustumerSecuirityRoute2'));
 app.use("/api/AreaAssing", require('./Router/AreaAssingRouter/AreaAssingRouter'));
 
 
