@@ -3,8 +3,11 @@ const app = express.Router();
 
 const {
     fillingstock,
-    getdata,getsingle,deletedata,updatedata
-    
+    getdata,
+    getsingle,
+    deletedata,
+    updatedata
+
 } = require('../../Controller/ProductController/FillingStockController')
 
 
