@@ -14,6 +14,15 @@ const addarea = async (req, res) => {
 
 const getdata = async (req, res) => {
     try {
+        const finddata = await db.find()
+        res.status(200).json(finddata)
+    } catch (error) {
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+}
+
+const getemployeename = async (req, res) => {
+    try {
         const finddata = await employee.find().select('firstName')
         res.status(200).json(finddata)
     } catch (error) {
@@ -49,4 +58,4 @@ const updatedata = async (req, res) => {
 };
 
 
-module.exports = { addarea, getdata, getsingledata, deletedata, updatedata};
+module.exports = { addarea, getdata, getemployeename, getsingledata, deletedata, updatedata};

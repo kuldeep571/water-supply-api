@@ -4,6 +4,7 @@ const app = express.Router();
 const {
     addarea,
     getdata,
+    getemployeename,
     getsingledata,
     deletedata,
     updatedata
@@ -15,6 +16,8 @@ const {
 app.post("/", addarea);
 
 app.get("/", getdata);
+
+app.get("/name", getemployeename);
 
 app.get("/:id", getsingledata);
 
