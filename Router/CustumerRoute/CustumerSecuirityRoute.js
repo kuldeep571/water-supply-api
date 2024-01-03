@@ -7,7 +7,7 @@ const {
     getsingledata,
     deletedata, 
     updatedata
-}= require('../../Controller/CustumerController/NewCustumerCtrl')
+}= require('../../Controller/CustumerController/CustumerSecuirityCtrl')
 
 app.post("/", addemployee);
 
