@@ -32,6 +32,8 @@ app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
 app.use("/api/custumersecurity2", require('./Router/CustumerRoute/CustumerSecuirityRoute2'));
 app.use("/api/productprice", require('./Router/CustumerRoute/ProductPriceRoute'));
+app.use("/api/newbank", require('./Router/TransactionRoute/AddnewbankRoute'));
+app.use("/api/newtransaction", require('./Router/TransactionRoute/NewTransactionRoute'));
 
 
 
