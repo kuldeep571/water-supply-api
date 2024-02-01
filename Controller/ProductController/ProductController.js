@@ -31,7 +31,7 @@ const getdata = async (req, res) => {
 const getsingledata = async (req, res) => {
     try {
         const finddata = await db.findOne({ _id: req.params.id })
-        res.status(200).json(finddata)
+        res.status(200).json({ finddata })
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
     }
@@ -39,8 +39,8 @@ const getsingledata = async (req, res) => {
 
 const deletedata = async (req, res) => {
     try {
-        const deletedatas = await db.deleteOne({ _id: req.params.id })
-        res.status(200).json({ deletedatas, message: "Delete vendor data" })
+        const deletedata = await db.deleteOne({ _id: req.params.id })
+        res.status(200).json({ deletedata, message: "Delete vendor data" })
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
     }
@@ -54,7 +54,7 @@ const updatedata = async (req, res) => {
             quantityType
         } = req.body;
 
-        const data = await db.findByIdAndUpdate(
+        const updatedData = await db.findByIdAndUpdate(
             req.params.id,
             {
                 productName,
@@ -63,7 +63,7 @@ const updatedata = async (req, res) => {
             },
             { new: true },
         )
-        res.status(200).json(data);
+        res.status(200).json({ updatedData });
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: "Internal Server Error" });
