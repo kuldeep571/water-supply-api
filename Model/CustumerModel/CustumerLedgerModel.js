@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// comment
 const EmpolyeeSchema = mongoose.Schema(
     {
         custumerid: {
@@ -10,7 +10,7 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        ledgertype   : {
+        ledgertype: {
             type: String,
             required: true,
         },
@@ -74,7 +74,7 @@ const EmpolyeeSchema = mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports  = mongoose.model("custumerledgers", EmpolyeeSchema);
+module.exports = mongoose.model("custumerledgers", EmpolyeeSchema);
 
 
 // {
