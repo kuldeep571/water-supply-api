@@ -17,6 +17,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 // app.use(express.json({}))
 app.use("/api/product", require('./Router/ProductRouter/ProductRouter'));
+app.use("/api/product-type", require('./Router/ProductRouter/ProductTypeRouter'));
 app.use("/api/fillingstock", require('./Router/ProductRouter/FillingStockRouter'));
 app.use("/api/stockinout", require('./Router/ProductRouter/StockInOutRouter'));
 app.use("/api/employee", require('./Router/EmployeeRouter/EmployeeRouter'));
