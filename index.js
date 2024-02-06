@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
-app.use(express.json({}))
+// app.use(express.json({}))
 app.use("/api/product", require('./Router/ProductRouter/ProductRouter'));
 app.use("/api/product-type", require('./Router/ProductRouter/ProductTypeRouter'));
 app.use("/api/fillingstock", require('./Router/ProductRouter/FillingStockRouter'));
