@@ -18,15 +18,15 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        custumerid: {
-            type: String,
-            required: true,
-        },
+        // custumerid: {
+        //     type: String,
+        //     required: true,
+        // },
         custumername: {
             type: String,
             required: true,
         },
-        adress: {
+        address: {
             type: String,
             required: true,
         },
