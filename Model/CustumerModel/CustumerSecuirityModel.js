@@ -22,7 +22,7 @@ const EmpolyeeSchema = mongoose.Schema(
         //     type: String,
         //     required: true,
         // },
-        custumername: {
+        customername: {
             type: String,
             required: true,
         },
