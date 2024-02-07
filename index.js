@@ -27,7 +27,7 @@ app.use("/api/vendorpurchaseorder", require('./Router/VendorRouter/VendorPurchas
 app.use("/api/vendorpayment", require('./Router/VendorRouter/VendorPaymentRouter'));
 app.use("/api/vendorledger", require('./Router/VendorRouter/VendorLedgerRouter'));
 app.use("/api/newcustumer", require('./Router/CustumerRoute/NewCustumerRoute'));
-app.use("/api/custumerledger", require('./Router/CustumerRoute/CustumerLedgerRoute'));
+app.use("/api/customerledger", require('./Router/CustumerRoute/CustumerLedgerRoute'));
 app.use("/api/custumerpayment", require('./Router/CustumerRoute/CustumerPaymentRoute'));
 app.use("/api/neworder", require('./Router/CustumerRoute/NewOrderRoute'));
 app.use("/api/custumersecurity", require('./Router/CustumerRoute/CustumerSecuirityRoute'));
