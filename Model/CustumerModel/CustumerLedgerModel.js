@@ -2,11 +2,8 @@ const mongoose = require("mongoose");
 // comme
 const EmpolyeeSchema = mongoose.Schema(
     {
-        custumerid: {
-            type: String,
-            required: true,
-        },
-        custumer: {
+        
+        custumername: {
             type: String,
             required: true,
         },
@@ -14,11 +11,8 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        name: {
-            type: String,
-            required: true,
-        },
-        adress: {
+        
+        address: {
             type: String,
             required: true,
         },
@@ -78,10 +72,9 @@ module.exports = mongoose.model("custumerledgers", EmpolyeeSchema);
 
 
 // {
-//     "custumerid":"00001",
-//     "custumer":"cvdh",
+//     
+//     "custumername":"cvdh",
 //     "ledgertype":"jcvd",
-//     "name":"jcvvd",
 //     "adress":"jcdh",
 //     "contact":"dkchdv",
 //     "securitybalance":"jhcd",
