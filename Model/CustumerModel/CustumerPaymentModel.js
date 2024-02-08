@@ -22,10 +22,6 @@ const EmpolyeeSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        selectbank: {
-            type: String,
-            required: true,
-        },
         paymentdate: {
             type: String,
             required: true,
